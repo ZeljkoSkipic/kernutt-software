@@ -1,0 +1,177 @@
+$mob-max: 599.5px;
+$tab-min: 599.6px;
+$tab-max: 797.5px;
+$limbo-min: 797.6px;
+$limbo-max: 1199.5px;
+$desk-min: 1199.6px;
+$sm-desk-max: 1360.5px;
+$md-desk-min: 1360.6px;
+$md-desk-max: 1659.5px;
+$lg-desk-min: 1659.6px;
+$huge-desk-min: 2560px;
+
+@mixin mob-only {
+  @media (max-width: $mob-max) {
+    @content;
+  }
+}
+
+@mixin tab-min {
+  @media (min-width: $tab-min) {
+    @content;
+  }
+}
+
+@mixin tab-max {
+  @media (max-width: $tab-max) {
+    @content;
+  }
+}
+
+@mixin tab-only {
+  @media (min-width: $tab-min) and (max-width: $tab-max) {
+    @content;
+  }
+}
+
+@mixin limbo-min {
+  @media (min-width: $limbo-min) {
+    @content;
+  }
+}
+
+@mixin limbo-max {
+  @media (max-width: $limbo-max) {
+    @content;
+  }
+}
+
+@mixin limbo-only {
+  @media (min-width: $limbo-min) and (max-width: $limbo-max) {
+    @content;
+  }
+}
+
+@mixin desk-min {
+  @media (min-width: $desk-min) {
+    @content;
+  }
+}
+
+@mixin sm-desk-only {
+  @media (min-width: $desk-min) and (max-width: $sm-desk-max) {
+    @content;
+  }
+}
+
+@mixin sm-desk-max {
+  @media (max-width: $sm-desk-max) {
+    @content;
+  }
+}
+
+@mixin md-desk-min {
+  @media (min-width: $md-desk-min) {
+    @content;
+  }
+}
+
+@mixin md-desk-max {
+  @media (min-width: $md-desk-max) {
+    @content;
+  }
+}
+
+@mixin md-desk-only {
+  @media (min-width: $md-desk-min)  and (max-width: $md-desk-max) {
+    @content;
+  }
+}
+
+@mixin lg-desk-min {
+  @media (min-width: $lg-desk-min) {
+    @content;
+  }
+}
+
+@mixin huge-desk-min {
+  @media (min-width: $huge-desk-min) {
+    @content;
+  }
+}
+
+
+@mixin font-a {
+	font-weight: 600;
+	font-size: 25px;
+	font-family: "AvenirNext", sans-serif;
+	color: #b36c26;
+	padding-bottom: $space-d;
+}
+
+@mixin font-b {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+@mixin font-c {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+@mixin font-d {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+@mixin font-e {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+@mixin font-f {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 14px;
+}
+
+@mixin font-g {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+$space-a: 35px;
+$space-b: 56px;
+$space-c: 26px;
+$space-d: 15px;
+
+.font-a {
+	@include font-a;
+}
+
+.font-b {
+	@include font-b;
+}
+
+.font-c {
+	@include font-c;
+}
+
+.font-d {
+	@include font-d;
+}
+
+.font-e {
+	@include font-e;
+}
+
+.font-f {
+	@include font-f;
+}
+
+.font-g {
+	@include font-g;
+}
