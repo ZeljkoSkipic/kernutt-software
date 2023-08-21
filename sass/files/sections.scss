@@ -1,0 +1,21 @@
+.ks_about {
+	display: flex;
+	justify-content: space-between;
+	@include tab-max {
+		flex-direction: column;
+		.right {
+			margin-top: var(--space-3);
+		}
+	}
+	@include limbo-min {
+		.left {
+			width: 51%;
+		}
+		 .right {
+			width: 43%;
+		}
+	}
+	.btn {
+		margin-top: var(--space-4);
+	}
+}

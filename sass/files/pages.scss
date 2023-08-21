@@ -1,0 +1,176 @@
+@mixin h-after {
+	&::after {
+		content: "";
+		width: 84px;
+		height: 7px;
+		display: block;
+		background-color: var(--color-2);
+		margin-top: var(--space-3);
+	}
+}
+
+
+/* Software Solutions */
+
+.ks_software_solutions {
+	.ks_ss_hero {
+		background-color: var(--color-1);
+		padding-inline: var(--space-1);
+		h1 {
+			color: #fff;
+			font-weight: 700;
+			padding-bottom: 0;
+			@include h-after;
+		}
+	}
+	.ks_ss_inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.info_box {
+			width: 48%;
+			margin-bottom: 4%;
+			@include mob-only {
+				width: 100%;
+			}
+			.ib_text {
+				padding-inline: 40px;
+			}
+			.btn {
+				margin-left: 40px;
+			}
+		}
+	}
+}
+
+
+/* Sage 100 */
+
+.ks_sage_hero {
+	@include flex;
+	@include desk-min {
+		> div {
+			width: 50%;
+		}
+	}
+	.left {
+		background-color: var(--color-1);
+		padding: var(--space-3) var(--space-1) var(--space-1);
+		@include tab-max {
+			padding-inline: var(--space-3);
+		}
+		h1 {
+			color: #fff;
+			@include h-after;
+			line-height: 1.3;
+		}
+		div {
+			color: #fff;
+			font-size: 18px;
+			line-height: 26px;
+			margin-top: var(--space-3);
+		}
+	}
+	.right {
+		background-color: var(--color-1);
+		@include limbo-max {
+			width: 100%;
+		}
+		iframe {
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			height: 100%;
+		}
+		video {
+			width: 100%;
+		}
+	}
+}
+
+.ks_sage_section {
+	display: flex;
+	padding: var(--space-3) var(--space-1);
+	align-items: start;
+	@include limbo-max {
+		flex-direction: column;
+	}
+	@include tab-max {
+		padding-inline: var(--space-3);
+	}
+	@include desk-min {
+		> div {
+			width: 50%;
+		}
+	}
+	.left {
+		@include tab-max {
+			margin-bottom: var(--space-4);
+		}
+		@include desk-min {
+			padding-right: var(--space-2);
+		}
+	}
+	.blurb {
+		margin-bottom: 15px;
+		p {
+			padding-bottom: 15px;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+		h3 {
+			margin-bottom: 5px;
+		}
+		ul {
+			list-style: disc;
+			padding-left: 20px;
+		}
+	}
+	.right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include mob-only {
+			flex-direction: column;
+		}
+	}
+	.sage_ib {
+		@include tab-min {
+			width: 48.5%;
+		}
+		margin-bottom: 3%;
+		padding: 30px 40px 25px 30px;
+		@include tab-max {
+			padding: 25px;
+		}
+		background-color: var(--color-3);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+/* 		aspect-ratio: 423 / 351;
+ */		h3 {
+			font-size: 25px;
+			font-weight: 600;
+			line-height: 29px;
+		}
+		div {
+			margin-bottom: auto;
+			margin-top: 0;
+			padding-bottom: 18px;
+		}
+		.btn {
+			width: fit-content;
+		}
+	}
+}
+
+
+/* About */
+
+.ks_about_page {
+	.wp-post-image {
+		width: 100%;
+	}
+	display: flex;
+	flex-direction: column;
+}

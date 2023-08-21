@@ -1,0 +1,32 @@
+.info_box { // Global
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin-bottom: var(--space-3);
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	@include mob-only {
+		width: 100%;
+	}
+	img {
+		padding: 18px;
+	}
+	.ib_title {
+		font-size: 25px;
+		font-weight: 600;
+		padding-bottom: 15px;
+	}
+	.ib_text {
+		padding-inline: 25px;
+		padding-bottom: 35px;
+		.body-2:not(:last-child)  {
+			margin-bottom: var(--space-3);
+		}
+	}
+	.btn {
+		margin-top: auto;
+		margin-bottom: var(--space-3);
+		margin-left: 25px;
+		display: inline-flex;
+		width: fit-content;
+	}
+}

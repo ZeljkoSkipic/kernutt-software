@@ -20,78 +20,62 @@ if ( 'on' === et_get_option( 'divi_back_to_top', 'false' ) ) : ?>
 <?php endif;
 
 if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
-			<div class="footer_before">
-				<div class="container">
-					<div class="footer_before_left">
-						<h2 class="kss_h2">Our Technology Services include:</h2>
-						<h4>Software implementation, training and support</h4>
-						<h4>Custom programming</h4>
-						<h4>Application design and development</h4>
-						<h4>Report writing</h4>
-						<h4>Process and procedure evaluation and documentation</h4>
-					</div>
-					<div class="footer_before_right">
-						<h2 class="kss_h2">Get in touch with us</h2>
-						<?php echo do_shortcode('[gravityform id="2" title="false"]'); ?>
-					</div>
+		<footer id="main-footer">
+		<div class="container">
+			<div id="footer-widgets">
+				<div class="ks_footer_widget_1">
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+				<div class="ks_footer_widget_2">
+					<?php dynamic_sidebar( 'sidebar-3' ); ?>
+				</div>
+				<div class="ks_footer_widget_3">
+					<?php dynamic_sidebar( 'sidebar-4' ); ?>
+				</div>
+				<div class="ks_footer_widget_4">
+					<?php dynamic_sidebar( 'sidebar-5' ); ?>
+				</div>
+				<div class="ks_footer_widget_5">
+					<?php dynamic_sidebar( 'sidebar-6' ); ?>
 				</div>
 			</div>
-			<footer id="main-footer">
-			<div class="container">
-				<div id="footer-widgets">
-					<div class="ks_footer_widget_1">
-						<?php dynamic_sidebar( 'sidebar-2' ); ?>
-					</div>
-					<div class="ks_footer_widget_2">
-						<?php dynamic_sidebar( 'sidebar-3' ); ?>
-					</div>
-					<div class="ks_footer_widget_3">
-						<?php dynamic_sidebar( 'sidebar-4' ); ?>
-					</div>
-					<div class="ks_footer_widget_4">
-						<?php dynamic_sidebar( 'sidebar-5' ); ?>
-					</div>
-					<div class="ks_footer_widget_5">
-						<?php dynamic_sidebar( 'sidebar-6' ); ?>
-					</div>
-				</div>
-			</div>
-
-
-		<?php
-			if ( has_nav_menu( 'footer-menu' ) ) : ?>
-
-				<div id="et-footer-nav">
-					<div class="container">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'footer-menu',
-								'depth'          => '1',
-								'menu_class'     => 'bottom-nav',
-								'container'      => '',
-								'fallback_cb'    => '',
-							) );
-						?>
-					</div>
-				</div>
-
-			<?php endif; ?>
-
-				<div id="footer-bottom">
-					<div class="container clearfix">
-				<?php
-					if ( false !== et_get_option( 'show_footer_social_icons', true ) ) {
-						get_template_part( 'includes/social_icons', 'footer' );
-					}
-
-					// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo et_core_fix_unclosed_html_tags( et_core_esc_previously( et_get_footer_credits() ) );
-					// phpcs:enable
-				?>
-					</div>
-				</div>
-			</footer>
 		</div>
+
+
+	<?php
+		if ( has_nav_menu( 'footer-menu' ) ) : ?>
+
+			<div id="et-footer-nav">
+				<div class="container">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'footer-menu',
+							'depth'          => '1',
+							'menu_class'     => 'bottom-nav',
+							'container'      => '',
+							'fallback_cb'    => '',
+						) );
+					?>
+				</div>
+			</div>
+
+		<?php endif; ?>
+
+			<div id="footer-bottom">
+				<div class="container clearfix">
+			<?php
+				if ( false !== et_get_option( 'show_footer_social_icons', true ) ) {
+					get_template_part( 'includes/social_icons', 'footer' );
+				}
+
+				// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo et_core_fix_unclosed_html_tags( et_core_esc_previously( et_get_footer_credits() ) );
+				// phpcs:enable
+			?>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 <?php endif; // ! is_page_template( 'page-template-blank.php' ) ?>
 

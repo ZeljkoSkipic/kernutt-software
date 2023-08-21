@@ -1,0 +1,45 @@
+{
+    "key": "group_64e333b2a658f",
+    "title": "Page: About",
+    "fields": [
+        {
+            "key": "field_64e333b3b42c1",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Featured image is shown as a hero image.\r\nAbout section is Globally set up <a href=\"\/wp-admin\/admin.php?page=acf-options-globals\" >here<\/a>:",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-about.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1692611597
+}

@@ -43,6 +43,28 @@ add_filter( 'action_scheduler_pastdue_actions_check_pre', '__return_false' );
 //
 
 
+// ACF Options Page
+
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Site General Settings',
+        'menu_title'    => 'Site Settings',
+        'menu_slug'     => 'site-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Global Sections',
+        'menu_title'    => 'Globals',
+        'parent_slug'   => 'site-general-settings',
+    ));
+
+}
+
+
 function my_acf_json_save_point( $path ) {
     return get_stylesheet_directory() . '/acf-json';
 }

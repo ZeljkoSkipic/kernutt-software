@@ -26,8 +26,17 @@
 	font-weight: 700;
 }
 
-:root {
-	font-family: "AvenirNext";
+.ks_page_content, footer {
+	* {
+		font-family: "AvenirNext"!important;
+	}
+}
+
+
+.container {
+	width: var(--site-width);
+	max-width: var(--site-max-width);
+	margin-inline: auto;
 }
 
 
