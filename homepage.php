@@ -32,6 +32,15 @@ if( have_rows('carousel') ): ?>
 			<div class="ks_hc_inner">
 				<h3><?php echo $title; ?></h3>
 				<div><?php echo $text; ?></div>
+				<?php
+				$button_text_and_link = get_sub_field('button_text_and_link');
+				if( $button_text_and_link ):
+					$link_url = $button_text_and_link['url'];
+					$link_title = $button_text_and_link['title'];
+					$link_target = $button_text_and_link['target'] ? $button_text_and_link['target'] : '_self';
+					?>
+					<a class="btn btn-3" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+				<?php endif; ?>
 			</div>
 		</div>
 	<?php endwhile; ?>
@@ -84,6 +93,34 @@ if( have_rows('carousel') ): ?>
 			</div>
 		</div>
 	</div>
+	<div class="ks_home_sec3 space_2_1">
+		<div class="container">
+			<?php
+
+			if( have_rows('videos') ): ?>
+
+				<?php while( have_rows('videos') ) : the_row(); ?>
+				<div class="ks_col">
+					<?php
+					$title = get_sub_field('title');
+					$video = get_sub_field('video');?>
+					<h4 class="body-1"><?php echo $title; ?></h4>
+					<?php echo $video; ?>
+					</div>
+				<?php endwhile; ?>
+
+			<?php endif; ?>
+		</div>
+		<?php
+		$vmr_btn = get_field('vmr_button');
+		if( $vmr_btn ):
+			$vmr_btn_url = $vmr_btn['url'];
+			$vmr_btn_title = $vmr_btn['title'];
+			$vmr_btn_target = $vmr_btn['target'] ? $vmr_btn['target'] : '_self';
+			?>
+			<a class="btn btn-1" href="<?php echo esc_url( $vmr_btn_url ); ?>" target="<?php echo esc_attr( $vmr_btn_target ); ?>"><?php echo esc_html( $vmr_btn_title ); ?></a>
+		<?php endif; ?>
+	</div>
 	<?php get_template_part('template-parts/about'); ?>
 
 </div>
@@ -94,7 +131,8 @@ jQuery(function($){
 	// options
 	cellAlign: 'left',
 	contain: true,
-	pageDots: false
+	pageDots: false,
+	adaptiveHeight: true
 	});
 });
 </script>

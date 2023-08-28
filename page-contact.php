@@ -20,7 +20,7 @@ get_header();
 			} ?>
 			<?php the_field('caption'); ?>
 		</div>
-		<div class="ks_col">
+		<div class="ks_col body-1">
 			<?php the_field('description'); ?>
 		</div>
 		<div class="ks_col">

@@ -194,7 +194,10 @@ $huge-desk-min: 2560px;
 	padding-top: var(--space-2);
 	padding-bottom: var(--space-3);
 }
-
+.space_2_1 {
+	padding-top: var(--space-2);
+	padding-bottom: var(--space-1);
+}
 .space_3_2 {
 	padding-top: var(--space-3);
 	padding-bottom: var(--space-2);
@@ -299,12 +302,38 @@ $huge-desk-min: 2560px;
 
 .btn-2 {
 	color: var(--color-1);
-	background-color: #ADADAD;
-	border: 2px solid #ADADAD;
+	background-color: #d7d7d7;
+	border: 2px solid #d7d7d7;
 }
 
 .btn-3 {
 	color: var(--color-1);
 	background-color: var(--color-2);
 	border: 2px solid var(--color-2);
+}
+
+@mixin btn-1 {
+	min-width: 172px;
+	min-height: 57px;
+	max-width: 100%;
+	padding: 7.5px 15px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: $st;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	background-color: var(--color-1);
+	border: 2px solid var(--color-1);
+	color: #fff;
+	&:hover {
+		background-color: #ADADAD;
+		border-color: #ADADAD;
+		color: var(--color-1);
+	}
+	&:active {
+		background-color: #fff;
+		color: var(--color-1);
+		border-color: var(--color-1);
+	}
 }

@@ -256,7 +256,7 @@
 			?>
 				<div class="logo_container">
 					<span class="logo_helper"></span>
-					<a href="https://www.kernuttstokes.com/">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo esc_attr( $logo ); ?>" width="<?php echo esc_attr( $logo_width ); ?>" height="<?php echo esc_attr( $logo_height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
 					</a>
 				</div>
@@ -316,7 +316,15 @@
 						</div>
 					<?php endif; ?>
 
-					<a class="kn_btn" href="/contact-us" target="_self">Contact Us</a>
+					<?php
+					$header_button = get_field('header_button', 'option');
+					if( $header_button ):
+						$link_url = $header_button['url'];
+						$link_title = $header_button['title'];
+						$link_target = $header_button['target'] ? $header_button['target'] : '_self';
+						?>
+						<a class="kn_btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+					<?php endif; ?>
 
 					<?php
 

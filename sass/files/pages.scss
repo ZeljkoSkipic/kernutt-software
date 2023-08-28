@@ -13,16 +13,6 @@
 /* Software Solutions */
 
 .ks_software_solutions {
-	.ks_ss_hero {
-		background-color: var(--color-1);
-		padding-inline: var(--space-1);
-		h1 {
-			color: #fff;
-			font-weight: 700;
-			padding-bottom: 0;
-			@include h-after;
-		}
-	}
 	.ks_ss_inner {
 		display: flex;
 		flex-wrap: wrap;
@@ -40,6 +30,17 @@
 				margin-left: 40px;
 			}
 		}
+	}
+}
+
+.ks_ss_hero {
+	background-color: var(--color-1);
+	padding-inline: var(--space-1);
+	h1 {
+		color: #fff;
+		font-weight: 700;
+		padding-bottom: 0;
+		@include h-after;
 	}
 }
 
@@ -164,6 +165,59 @@
 	}
 }
 
+/* Sage Inner */
+
+.ks_sage_inner {
+	@include flex;
+	padding-inline: var(--space-2);
+	justify-content: space-between;
+	.wp_content {
+		p {
+			margin-bottom: var(--space-3);
+		}
+		img {
+			float: none;
+			max-width: 414px;
+		}
+	}
+	.ks_si_ib {
+		&:not(:last-child) {
+			margin-bottom: var(--space-3);
+		}
+		h3 {
+			margin-bottom: 15px;
+		}
+	}
+	ul {
+		list-style: disc;
+		padding-left: 20px;
+		margin-bottom: 10px;
+	}
+	.btn {
+		margin-top: var(--space-3);
+	}
+	@include desk-min {
+		> div {
+			width: calc(50% - 30px);
+		}
+	}
+	@include limbo-max {
+		> div {
+			width: 100%;
+		}
+		.right {
+			margin-top: var(--space-3);
+		}
+	}
+	.right {
+		iframe {
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			height: auto;
+		}
+	}
+}
+
 
 /* About */
 
@@ -173,4 +227,194 @@
 	}
 	display: flex;
 	flex-direction: column;
+}
+
+
+/* Century */
+
+.ks_century {
+	display: flex;
+	padding-inline: var(--space-2);
+	max-width: calc(1920px + var(--space-2)*2);
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.ks_col {
+		@include desk-min {
+			width: 23%;
+		}
+		@include limbo-max {
+			width: 48%;
+			margin-bottom: 4%;
+		}
+		@include mob-only {
+			width: 100%;
+			.btn {
+				margin-top: var(--space-3);
+			}
+		}
+		&:first-child {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			align-items: start;
+
+		}
+		ul {
+			list-style: disc;
+			padding-left: 20px;
+		}
+	}
+}
+
+/* Contact */
+
+.ks_contact_inner {
+	display: flex;
+	max-width: calc(1920px + var(--space-2)*2);
+	margin-inline: auto;
+	padding: var(--space-2);
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.ks_col {
+		&:first-child {
+			width: 23%;
+			font-weight: 500;
+		}
+		&:nth-child(2) {
+			width: 20%;
+			@include desk-min {
+				margin-left: 30px;
+				margin-right: auto;
+			}
+		}
+		&:last-child {
+			width: 50%;
+			.gform_legacy_markup_wrapper {
+				margin: 0;
+				@include limbo-min {
+					li:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+			.gform_heading {
+				display: none;
+			}
+			.gform-body {
+				.gfield_label {
+					font-size: 16px;
+					font-weight: 500;
+				}
+				input {
+					width: 100%;
+					background-color: rgba(215, 215, 215, .25);
+					border: none;
+					height: 53px;
+					padding-inline: var(--space-4)!important;
+
+				}
+				textarea {
+					background-color: rgba(215, 215, 215, .25);
+					border: none;
+					padding: var(--space-4);
+				}
+			}
+			input.gform_button {
+				@include btn-1;
+				cursor: pointer;
+			}
+		}
+		@include limbo-only {
+			&:first-child {
+				width: 48%;
+			}
+			&:nth-child(2) {
+				width: 48%;
+			}
+			&:last-child {
+				width: 100%;
+			}
+		}
+		@include tab-only {
+			&:first-child {
+				width: 48%;
+			}
+			&:nth-child(2) {
+				width: 48%;
+			}
+			&:last-child {
+				width: 100%;
+			}
+		}
+		@include mob-only {
+			width: 100%!important;
+			margin-bottom: var(--space-4);
+		}
+	}
+}
+
+
+
+/* Sage */
+
+html body #sage-intacct-partners a.button {
+	min-width: 172px;
+	min-height: 57px;
+	max-width: 100%;
+	padding: 7.5px 15px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: $st;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	background-color: var(--color-1);
+	border: 2px solid var(--color-1);
+	background-image: none;
+	color: #fff;
+	&:hover {
+		background-color: #ADADAD;
+		border-color: #ADADAD;
+		color: var(--color-1);
+		background-image: none;
+	}
+	&:active {
+		background-color: #fff;
+		color: var(--color-1);
+		border-color: var(--color-1);
+		background-image: none;
+	}
+}
+
+
+html body #sage-intacct-partners .cta-buttons a.button {
+	min-width: 172px;
+	min-height: 57px;
+	max-width: 100%;
+	padding: 7.5px 15px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: $st;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	color: var(--color-1);
+	background-color: #d7d7d7;
+	border: 2px solid #d7d7d7;
+	background-image: none;
+	&:hover {
+		background-color: #ADADAD;
+		border-color: #ADADAD;
+		color: var(--color-1);
+		background-image: none;
+	}
+	&:active {
+		background-color: #fff;
+		color: var(--color-1);
+		border-color: #ADADAD;
+		background-image: none;
+	}
+	i {
+		display: none;
+	}
 }
