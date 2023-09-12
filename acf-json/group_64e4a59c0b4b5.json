@@ -154,9 +154,9 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
+            "tabs": "text",
+            "media_upload": 0,
             "toolbar": "full",
-            "media_upload": 1,
             "delay": 0
         }
     ],
@@ -178,5 +178,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692788732
+    "modified": 1693217706
 }

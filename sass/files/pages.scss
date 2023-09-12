@@ -268,6 +268,26 @@
 
 /* Contact */
 
+.ks_contact_top {
+	display: flex;
+	max-width: calc(1920px + var(--space-2)*2);
+	padding: var(--space-2);
+	padding-bottom: 0;
+	h1 {
+		font-weight: 700;
+		font-size: 42px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 84px;
+			height: 7px;
+			background-color: var(--color-2);
+			left: 0;
+			bottom: -20px;
+		}
+	}
+}
 .ks_contact_inner {
 	display: flex;
 	max-width: calc(1920px + var(--space-2)*2);
@@ -275,6 +295,12 @@
 	padding: var(--space-2);
 	flex-wrap: wrap;
 	justify-content: space-between;
+	h1 {
+		width: 100%;
+	}
+	a {
+		color: #b36c26;
+	}
 	.ks_col {
 		&:first-child {
 			width: 23%;
@@ -282,6 +308,7 @@
 		}
 		&:nth-child(2) {
 			width: 20%;
+			font-weight: 600;
 			@include desk-min {
 				margin-left: 30px;
 				margin-right: auto;
@@ -417,4 +444,8 @@ html body #sage-intacct-partners .cta-buttons a.button {
 	i {
 		display: none;
 	}
+}
+
+html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-navigation-list-item.sub-navigation-list-item--active {
+	border-bottom-color: #B26C26!important;
 }

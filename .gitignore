@@ -44,9 +44,7 @@ Thumbs.db
 
 # Composer #
 ##########
-!assets/js/vendor/
 wpcs/
-/vendor/
 
 # Bower #
 ##########
@@ -66,8 +64,10 @@ assets/bower_components/*
 .idea/
 library/vendors/composer
 assets/img/.DS_Store
-*.js
 .editorconfig
 .eslintignore
 package-lock.json
 package.json
+gulpfile.babel.js
+wpgulp.config.js
+.eslintrc.js

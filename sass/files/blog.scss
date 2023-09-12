@@ -1,0 +1,452 @@
+/* Blog */
+
+.blog {
+	overflow-x: hidden;
+	.posts_grid {
+		position: relative;
+		overflow: hidden;
+		@include desk-min {
+			padding-top: 100px;
+		}
+		@include limbo-max {
+			padding-top: 0;
+		}
+		.load-more-filter  {
+			background-color: #3B3733;
+			font-size: 13px;
+			color: #fff;
+			padding: 10px 12px !important;
+			text-transform: uppercase;
+			line-height: 32px;
+			border: none !important;
+			border-radius: 3px;
+			transition: .3s all;
+			&:hover {
+				background-color: #D7D7D7;
+				color: #3B3733;
+			}
+		}
+		.post-link {
+			color: #000;
+			&:hover {
+				color: #B26C26;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.resource-center-title {
+	position: relative;
+
+	font-weight: 700;
+	@include desk-min {
+		top: -100px;
+	}
+	&::after {
+		content: "";
+		width: 84px;
+		height: 7px;
+		position: relative;
+		display: block;
+		background-color: var(--color-2);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.posts_filters {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 32px;
+	width: 100%;
+	max-width: 1808px;
+	.posts_filter:first-child {
+		.child-cat {
+			padding-left: 0!important;
+		}
+	}
+	@include desk-min {
+		position: absolute;
+		top: 85px;
+	}
+	@include limbo-max {
+		flex-direction: column;
+		margin-bottom: 64px;
+	}
+	.arrows {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		svg {
+			width: 30px;
+			height: 30px;
+			z-index: 9999;
+			position: absolute;
+			top: 50%;
+			left: -30px;
+			transform: translateY(-50%);
+			cursor: pointer;
+			& + svg {
+				right: -30px;
+				left: auto;
+			}
+		}
+
+	}
+	.filter-wrapper {
+		position: relative;
+		width: calc(100% - 812px);
+		order: 3;
+		overflow: auto;
+		padding-bottom: 8px;
+		&::-webkit-scrollbar {
+			background-color: #fff;
+			width: 16px;
+
+		}
+
+		/* background of the scrollbar except button or resizer */
+		&::-webkit-scrollbar-track {
+			background-color: #fff;
+			transition: .3s all;
+		}
+
+		/* scrollbar itself */
+		&::-webkit-scrollbar-thumb {
+			background-color: #babac0;
+			border-radius: 16px;
+			border: 4px solid #fff;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(0,0,0,0);
+			border-radius:16px;
+			border:5px solid #fff;
+		}
+
+		&:hover::-webkit-scrollbar-thumb {
+		  background-color: #a0a0a5;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background-color:#a0a0a5;
+			border:4px solid #f4f4f4
+		}
+		/* Buttons */
+		&::-webkit-scrollbar-button:single-button {
+			display: block;
+			height: 60px;
+			width: 30px;
+			background-color: rgba(0, 0, 0, 0.6);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: auto calc(100% - 2px);
+			background-color: #fff;
+		}
+		&:hover::-webkit-scrollbar-button:single-button {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		/* Up */
+		&::-webkit-scrollbar-button:single-button:horizontal:decrement {
+			background-image: url(assets/icons/chevron-left.svg);
+
+		}
+
+		&::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+			border-color: transparent transparent #777777 transparent;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+		/* Down */
+		&::-webkit-scrollbar-button:single-button:horizontal:increment {
+			background-image: url(assets/icons/chevron-right.svg);
+		}
+
+		&::-webkit-scrollbar-button:horizontal:single-button:increment:hover {
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+		@include limbo-max {
+			width: 100%;
+			order: 1;
+		}
+	}
+
+	.posts_filters_panel {
+		width: 100%;
+		border-radius: 10px;
+		background-color: #fff;
+		height: fit-content;
+		width: max-content;
+		@include limbo-max {
+			flex-direction: column;
+		}
+	}
+	.filter_panel_e {
+		padding: 5px 10px;
+		border: 2px solid #b3b3b3;
+		border-radius: 10px;
+		color: #b3b3b3;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-flex;
+		/* margin-bottom: 10px; */
+		font-weight: 500;
+		background-color: #fff;
+		position: relative;
+		padding-right: 25px;
+		@include limbo-max {
+			margin-left: 0;
+		}
+		.filter_panel_e_delete {
+			cursor: pointer;
+			margin-left: 8px;
+			font-size: 10px;
+			margin-top: 2px;
+			margin-bottom: -2px;
+			font-weight: 700;
+			position: absolute;
+			right: 10px;
+			top: 0;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.blog_reset {
+		color: #b3b3b3;
+		margin-top: 8px;
+		margin-right: 40px;
+		font-weight: 500;
+		width: fit-content;
+		flex-shrink: 0;
+		order: 2;
+		@include limbo-max {
+			position: relative;
+			margin-bottom: 16px;
+		}
+
+		@include mob-only {
+			width: 100%;
+		}
+	}
+}
+.posts_filters_selection {
+	display: flex;
+	@include limbo-min {
+		width: 300px;
+	}
+	@include tab-only {
+		width: 250px;
+	}
+
+	@include mob-only {
+		flex-direction: column;
+		width: 100%;
+	}
+	.posts_filter {
+		margin-right: 20px;
+		height: fit-content;
+		background-color: #fff;
+		@include limbo-max {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@include mob-only {
+			width: 100%;
+		}
+		.parent-cat {
+			display: flex;
+		}
+		.posts_filter_top  {
+			padding: 10px;
+			background-image: url(assets/icons/chevron-down.svg);
+			background-position: center right 10px;
+			background-repeat: no-repeat;
+			padding-right: 40px;
+			transition: .3s all;
+			border: 2px solid;
+			z-index: 2;
+			position: relative;
+			@include limbo-min {
+				min-width: 270px;
+			}
+			&.open {
+				border-bottom: 2px solid;
+				background-image: url(assets/icons/chevron-up.svg);
+
+				margin-bottom: -2px; // Remove to show bug
+			}
+		}
+		.posts_filter_bottom {
+			padding: 10px 15px 15px;
+			border: 2px solid #b3b3b3;
+			border-top: none;
+
+			label {
+				position: relative;
+				cursor: pointer;
+				line-height: 1.1;
+				margin-top: 10px;
+				&:before {
+					content: "";
+					display: block;
+					width: 17px;
+					height: 17px;
+					position: absolute;
+					left: -18px;
+					top: -2px;
+					background-image: url(assets/icons/circle.svg);
+					background-size: 15px;
+					background-position: bottom left;
+					background-repeat: no-repeat;
+
+				}
+			}
+			.child-cat {
+				padding-left: 14px;
+				font-size: 14px;
+
+				label {
+					&:before {
+						top: -1px;
+					}
+				}
+			}
+			input {
+				opacity: 0;
+				&:checked + label {
+					&::before {
+						background-image: url(assets/icons/check-circle.svg);
+
+					}
+				}
+			}
+		}
+		&.disabled {
+			opacity: .6;
+			border-color: rgba(0,0,0,.6);
+			cursor: default;
+			pointer-events: none;
+			.posts_filter_bottom {
+				display: none!important;
+			}
+		}
+		&:not(.disabled) {
+			cursor: pointer;
+		}
+	}
+}
+
+
+/* Grid */
+
+.posts_grid {
+	max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 56px 35px 56px;
+	margin-top: 35px;
+	@include limbo-max {
+		padding-top: 0;
+	}
+	.posts-author-date {
+		padding-inline: 20px;
+		padding-bottom: 8px;
+	}
+	.load_more_container {
+		margin: auto;
+		display: block;
+		text-align: center;
+		padding-bottom: 56px;
+	}
+	.author-posts-load-more {
+		background-color: #3B3733;
+		font-size: 13px;
+		color: #fff;
+		padding: 10px 12px!important;
+		text-transform: uppercase;
+		line-height: 32px;
+		border: none!important;
+		border-radius: 3px;
+		&:hover {
+			background-color: #D7D7D7;
+			color: #3B3733;
+		}
+		&::after {
+			display: none;
+		}
+	}
+}
+.posts_grid_inner {
+	display: flex;
+	flex-wrap: wrap;
+	.posts_grid_item {
+		background-color: #fff;
+		@include limbo-min {
+			width: calc(25% - 13.5px);
+			&:not(:nth-child(4n + 4)) {
+				margin-right: 18px;
+			}
+		}
+		@include tab-only {
+			width: 49%;
+			&:nth-child(odd) {
+				margin-right: 2%;
+			}
+		}
+		@include mob-only {
+			width: 100%;
+		}
+		margin-bottom: 30px;
+		border: 1px solid #333;
+		.pg-image {
+			aspect-ratio: 432 / 220;
+		}
+		img {
+			height: 100%;
+    		width: 100%;
+			object-fit: cover;
+		}
+		.heading-secondary {
+			padding: 25px 20px 0!important;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+			margin-bottom: 4px;
+			color: #000;
+		}
+		.sp_meta {
+			padding: 0 20px 10px 20px;
+			a {
+				color: #000;
+				&:hover {
+					color: #B26C26;
+					font-weight: 700;
+				}
+			}
+		}
+		.cats {
+			padding: 0 20px 5px;
+			a {
+				color: #000;
+				margin-right: 8px;
+				&:hover {
+					color: #B26C26;
+					font-weight: 700;
+				}
+			}
+		}
+		.entry-content {
+			padding: 0 20px 20px;
+    		line-height: 22px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}

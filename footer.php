@@ -81,14 +81,6 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 
 	</div>
 
-	<?php if(is_home()): ?>
-
-	<div class="filter_loader disabled">
-		<span class="loader"></span>
-	</div>
-
-	<?php endif; ?>
-
 	<?php wp_footer(); ?>
 </body>
 </html>

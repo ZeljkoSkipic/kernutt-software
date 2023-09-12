@@ -9,6 +9,7 @@
 	font-family: "AvenirNext";
 	src: url(assets/fonts/AvenirNext-Medium.ttf);
 	font-display: swap;
+	font-style: normal;
 	font-weight: 500;
 }
 
@@ -45,4 +46,8 @@
 	font-weight: 700;
 	line-height: 1.3;
 	position: relative;
+}
+
+.hidden {
+	display: none;
 }
