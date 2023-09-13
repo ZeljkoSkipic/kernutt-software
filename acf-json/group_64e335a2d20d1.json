@@ -137,6 +137,26 @@
             "media_upload": 0,
             "toolbar": "full",
             "delay": 0
+        },
+        {
+            "key": "field_6501b6dc38dff",
+            "label": "Page Class",
+            "name": "page_class",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -159,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692613448
+    "modified": 1694611177
 }

@@ -9,7 +9,7 @@ get_header();
 
 ?>
 
-<div class="ks_about_page ks_page_content">
+<div class="ks_about_page ks_page_content <?php the_field('page_class'); ?>">
 <div class="ks_contact_top">
 	<h1><?php the_title(); ?></h1>
 </div>

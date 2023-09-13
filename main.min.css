@@ -172,6 +172,17 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .ks_contact_inner .ks_col:last-child input.gform_button{min-width:172px;min-height:57px;max-width:100%;padding:7.5px 15px;font-size:16px;font-weight:600;-webkit-transition:.3s all;transition:.3s all;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color-1);border:2px solid var(--color-1);color:#fff;cursor:pointer}
 .ks_contact_inner .ks_col:last-child input.gform_button:hover{background-color:#adadad;border-color:#adadad;color:var(--color-1)}
 .ks_contact_inner .ks_col:last-child input.gform_button:active{background-color:#fff;color:var(--color-1);border-color:var(--color-1)}
+.ks_contact_inner .zrf-form form{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.ks_contact_inner .zrf-form form p label{font-size:16px}
+.ks_contact_inner .zrf-form form p input:not([type='submit']),.ks_contact_inner .zrf-form form p select{width:100%;background-color:rgba(215,215,215,0.25);border:0;height:53px;padding-inline:var(--space-4)}
+.ks_contact_inner .zrf-form form p textarea{border:0;background-color:rgba(215,215,215,0.25);padding-inline:var(--space-4)}
+.ks_contact_inner .zrf-form form p select{font-style:italic}
+.ks_contact_inner .zrf-form form p input[type='submit']{min-width:172px;min-height:57px;max-width:100%;padding:7.5px 15px;font-size:16px;font-weight:600;-webkit-transition:.3s all;transition:.3s all;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color-1);border:2px solid var(--color-1);color:#fff;cursor:pointer}
+.ks_contact_inner .zrf-form form p input[type='submit']:hover{background-color:#adadad;border-color:#adadad;color:var(--color-1)}
+.ks_contact_inner .zrf-form form p input[type='submit']:active{background-color:#fff;color:var(--color-1);border-color:var(--color-1)}
+.ks_page_content.support .ks_contact_inner{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.ks_page_content.support .ks_col:first-child{display:none}
+.ks_page_content.support .ks_col:nth-child(2){margin-left:0}
 html body #sage-intacct-partners a.button{min-width:172px;min-height:57px;max-width:100%;padding:7.5px 15px;font-size:16px;font-weight:600;-webkit-transition:.3s all;transition:.3s all;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color-1);border:2px solid var(--color-1);background-image:none;color:#fff}
 html body #sage-intacct-partners a.button:hover{background-color:#adadad;border-color:#adadad;color:var(--color-1);background-image:none}
 html body #sage-intacct-partners a.button:active{background-color:#fff;color:var(--color-1);border-color:var(--color-1);background-image:none}
@@ -243,6 +254,36 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .posts_grid_inner .posts_grid_item .cats a{color:#000;margin-right:8px}
 .posts_grid_inner .posts_grid_item .cats a:hover{color:#b26c26;font-weight:700}
 .posts_grid_inner .posts_grid_item .entry-content{padding:0 20px 20px;line-height:22px;font-size:16px;font-weight:400}
+.single-post table{width:100%}
+.single-post .posts-author{font-weight:600;font-size:25px}
+.single-post #main-content{background:-webkit-gradient(linear,left top,right top,from(#eee9d7),color-stop(50%,#eee9d7),color-stop(50%,#fff),to(#fff));background:linear-gradient(to right,#eee9d7 0,#eee9d7 50%,#fff 50%,#fff 100%)}
+.single-post #main-content *{font-family:AvenirNext}
+.single-post #main-content .container{background-color:#fff;padding:0 !important;max-width:1488px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex}
+.single-post #main-content .container::before{display:none}
+.single-post #main-content .container #left-area{padding:36px}
+.single-post #main-content .container #left-area .post_btn_wrap{width:100%;text-align:center}
+.single-post #main-content .container #left-area .post_pdf{background-color:#b36c26;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;padding:10px 14px;color:#fff !important;border-radius:4px;margin-top:30px;text-transform:uppercase}
+.single-post #main-content .container #left-area .post_pdf:hover{font-weight:500}
+.single-post #main-content .container #sidebar{padding:36px !important}
+.single-post #main-content .container #sidebar .widget_block{margin-bottom:0}
+.single-post #main-content .container #sidebar .sidebar_rp_heading{margin-top:30px}
+.single-post #main-content .container #sidebar h3{color:#b36c26;margin-bottom:0;font-size:25px;line-height:28px;font-weight:600}
+.single-post #main-content .container #sidebar a{font-weight:500;color:#000;display:block;font-size:16px;line-height:22px}
+.single-post #main-content .container #sidebar a:not(:last-child){margin-bottom:12px}
+.single-post #main-content .container #sidebar a:hover{color:#b36c26;font-weight:700}
+.single-post #main-content .container #sidebar .sidebar_button a{background-color:#b36c26;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;padding:10px 14px;color:#fff !important;border-radius:4px;margin-top:30px;text-transform:uppercase}
+.single-post #main-content .container #sidebar .sidebar_button a:hover{font-weight:500}
+.single-post h1{font-size:30px;font-weight:700;line-height:28px}
+.single-post h2,.single-post h3,.single-post h4,.single-post h5,.single-post h6{font-size:16px}
+.single-post .ks_sp_author{font-style:italic;display:inline-block}
+.single-post .ks_sp_author:not(:last-of-type):after{margin-left:3px;content:"and";display:inline-block}
+.single-post .ks_sp_author a{color:#000}
+.single-post .ks_sp_author a:hover{color:#b36c26;font-weight:700}
+.single-post .kn_sp_content{font-size:16px;margin-top:25px}
+.single-post .kn_sp_content a{color:#000;font-weight:500}
+.single-post .kn_sp_content a:hover{color:#b36c26;font-weight:700}
+.single-post .kn_sp_content p{line-height:22px;padding-bottom:12px}
+.single-post .kn_sp_content li{line-height:22px}
 .loader-wrapper{position:fixed;top:0;left:0;right:0;width:100%;height:100%;background-color:#0000005f;z-index:999999999}
 .loader{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:48px;height:48px;border:5px solid #FFF;border-bottom-color:#f7d21e;border-radius:50%;display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-animation:rotation 1s linear infinite;animation:rotation 1s linear infinite}
 .ks_about{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
@@ -292,6 +333,9 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .ks_home_carousel .background_image{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;z-index:-1}
 .ks_home_carousel .ks_hc_inner{max-width:400px;left:100px;border:2px solid #FFF}
 .ks_sage_section .sage_ib{width:48.5%}
+.ks_contact_inner .ks_col:last-child .gform-body li:not(:first-child):not(:nth-child(2)){margin-top:16px}
+.ks_contact_inner .zrf-form form p{padding-bottom:16px;width:49%}
+.ks_page_content.support .ks_col:nth-child(2){margin-right:56px}
 }@media(min-width:599.6px) and (max-width:797.5px){.ks_home_sec2 .ks_hs2_inner .info_box{width:48%}
 .ks_contact_inner .ks_col:first-child{width:48%}
 .ks_contact_inner .ks_col:nth-child(2){width:48%}
@@ -321,6 +365,10 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .et_header_style_centered header#main-header #et-top-navigation li{padding-right:10px}
 .et_header_style_centered header#main-header #et-top-navigation a{font-size:13px}
 }@media(min-width:981px){.et_header_style_centered header#main-header #et_top_search{margin-left:auto;margin-right:15px}
+.single-post #main-content{padding-inline:56px}
+.single-post #main-content .container .empty{width:25%;background-color:#eee9d7}
+.single-post #main-content .container #left-area{border-right:1px solid #b36c26;width:50%}
+.single-post #main-content .container #sidebar{width:25%}
 }@media(min-width:1199.6px){.ks_sage_hero>div{width:50%}
 .ks_sage_section>div{width:50%}
 .ks_sage_section .left{padding-right:var(--space-2)}
@@ -371,6 +419,10 @@ body .mobile_nav .et_mobile_menu{top:41px;right:-5px;left:unset;padding:var(--sp
 body .mobile_nav .et_mobile_menu>li>a{font-size:13px}
 body .mobile_nav .mobile_menu_bar{top:-10px !important}
 body .mobile_nav .mobile_menu_bar::before{color:#2d2a25}
+.single-post #main-content .container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%}
+.single-post #main-content .container .empty{display:none}
+.single-post #main-content .container #left-area{width:100%;border-bottom:1px solid #b36c26;padding-bottom:36px;padding-inline:56px}
+.single-post #main-content .container #sidebar{width:100%;padding-top:36px !important;padding-inline:56px !important}
 }@media(max-width:797.5px){:root{--site-width:calc(100% - 50px);--body-size:17px}
 .ks_home_sec1 .ks_hs1_inner .sec1_images img{margin-inline:auto}
 .cta_track .container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
@@ -396,7 +448,10 @@ body .mobile_nav .mobile_menu_bar::before{color:#2d2a25}
 .ks_sage_section .right{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .ks_century .ks_col{width:100%}
 .ks_century .ks_col .btn{margin-top:var(--space-3)}
+.ks_contact_top{padding-inline:var(--space-3)}
+.ks_contact_inner{padding-inline:var(--space-3)}
 .ks_contact_inner .ks_col{width:100% !important;margin-bottom:var(--space-4)}
+.ks_contact_inner .zrf-form form p{width:100%}
 .posts_filters .blog_reset{width:100%}
 .posts_filters_selection{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%}
 .posts_filters_selection .posts_filter{width:100%}
