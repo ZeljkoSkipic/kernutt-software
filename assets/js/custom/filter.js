@@ -10,6 +10,7 @@ jQuery(function ($) {
     const postsWrapper = $(".posts_grid_inner");
     const loadMoreButton = $(".load-more-filter");
     const loader = $('.loader-wrapper');
+    const reset = $('.blog_reset');
 
     var controller = null;
 
@@ -205,6 +206,14 @@ jQuery(function ($) {
                 visualElem.prepend($('label[for="' + checkbox.val() + '"]').text());
                 filterPanel.append(visualElem);
             })
+
+            // Reset button
+
+            reset.show();
+        }
+
+        else {
+            reset.hide();
         }
     }
 

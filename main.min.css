@@ -167,7 +167,8 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .ks_contact_inner .ks_col:last-child .gform_legacy_markup_wrapper{margin:0}
 .ks_contact_inner .ks_col:last-child .gform_heading{display:none}
 .ks_contact_inner .ks_col:last-child .gform-body .gfield_label{font-size:16px;font-weight:500}
-.ks_contact_inner .ks_col:last-child .gform-body input{width:100%;background-color:rgba(215,215,215,0.25);border:0;height:53px;padding-inline:var(--space-4) !important}
+.ks_contact_inner .ks_col:last-child .gform-body input,.ks_contact_inner .ks_col:last-child .gform-body select{width:100%;background-color:rgba(215,215,215,0.25);border:0;height:53px;padding-inline:var(--space-4) !important;-webkit-appearance:none}
+.ks_contact_inner .ks_col:last-child .gform-body select{background-image:url(assets/icons/arrows-up-down.svg);background-repeat:no-repeat;background-position:center right 10px}
 .ks_contact_inner .ks_col:last-child .gform-body textarea{background-color:rgba(215,215,215,0.25);border:0;padding:var(--space-4)}
 .ks_contact_inner .ks_col:last-child input.gform_button{min-width:172px;min-height:57px;max-width:100%;padding:7.5px 15px;font-size:16px;font-weight:600;-webkit-transition:.3s all;transition:.3s all;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color-1);border:2px solid var(--color-1);color:#fff;cursor:pointer}
 .ks_contact_inner .ks_col:last-child input.gform_button:hover{background-color:#adadad;border-color:#adadad;color:var(--color-1)}
@@ -255,7 +256,7 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .posts_grid_inner .posts_grid_item .cats a:hover{color:#b26c26;font-weight:700}
 .posts_grid_inner .posts_grid_item .entry-content{padding:0 20px 20px;line-height:22px;font-size:16px;font-weight:400}
 .single-post table{width:100%}
-.single-post .posts-author{font-weight:600;font-size:25px}
+.single-post .posts-author{font-weight:500;font-size:15px;font-style:italic}
 .single-post #main-content{background:-webkit-gradient(linear,left top,right top,from(#eee9d7),color-stop(50%,#eee9d7),color-stop(50%,#fff),to(#fff));background:linear-gradient(to right,#eee9d7 0,#eee9d7 50%,#fff 50%,#fff 100%)}
 .single-post #main-content *{font-family:AvenirNext}
 .single-post #main-content .container{background-color:#fff;padding:0 !important;max-width:1488px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -273,8 +274,8 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .single-post #main-content .container #sidebar a:hover{color:#b36c26;font-weight:700}
 .single-post #main-content .container #sidebar .sidebar_button a{background-color:#b36c26;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;padding:10px 14px;color:#fff !important;border-radius:4px;margin-top:30px;text-transform:uppercase}
 .single-post #main-content .container #sidebar .sidebar_button a:hover{font-weight:500}
-.single-post h1{font-size:30px;font-weight:700;line-height:28px}
-.single-post h2,.single-post h3,.single-post h4,.single-post h5,.single-post h6{font-size:16px}
+.single-post h1{font-size:25px;font-weight:600;line-height:28px}
+.single-post h2,.single-post h3{font-size:20px}
 .single-post .ks_sp_author{font-style:italic;display:inline-block}
 .single-post .ks_sp_author:not(:last-of-type):after{margin-left:3px;content:"and";display:inline-block}
 .single-post .ks_sp_author a{color:#000}

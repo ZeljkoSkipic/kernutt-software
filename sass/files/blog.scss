@@ -458,8 +458,9 @@
 		width: 100%;
 	}
 	.posts-author {
-		font-weight: 600;
-		font-size: 25px;
+		font-weight: 500;
+		font-size: 15px;
+		font-style: italic;
 	}
 	#main-content {
 		@media (min-width: 981px) {
@@ -582,12 +583,13 @@
 		}
 	}
 	h1 {
-		font-size: 30px;
-		font-weight: 700;
+		font-size: 25px;
+		font-weight: 600;
 		line-height: 28px;
+
 	}
-	h2, h3, h4, h5, h6 {
-		font-size: 16px;
+	h2, h3 {
+		font-size: 20px;
 	}
 	.ks_sp_author {
 		font-style: italic;

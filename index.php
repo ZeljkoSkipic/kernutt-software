@@ -71,7 +71,7 @@ if(!$categories) {
 
             </div>
 
-            <a class="blog_reset" href="<?php echo get_post_type_archive_link( 'post' ); ?>"> <?php esc_html_e('Clear All', 'kernutt-software'); ?></a>
+            <a <?php if(!isset($params_slit)) echo "style='display:none;'" ?> class="blog_reset" href="<?php echo get_post_type_archive_link( 'post' ); ?>"> <?php esc_html_e('Clear All', 'kernutt-software'); ?></a>
 
         </div>
         <div class="posts_grid_inner">
