@@ -173,14 +173,6 @@ ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,.et-db
 .ks_contact_inner .ks_col:last-child input.gform_button{min-width:172px;min-height:57px;max-width:100%;padding:7.5px 15px;font-size:16px;font-weight:600;-webkit-transition:.3s all;transition:.3s all;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color-1);border:2px solid var(--color-1);color:#fff;cursor:pointer}
 .ks_contact_inner .ks_col:last-child input.gform_button:hover{background-color:#adadad;border-color:#adadad;color:var(--color-1)}
 .ks_contact_inner .ks_col:last-child input.gform_button:active{background-color:#fff;color:var(--color-1);border-color:var(--color-1)}
-.ks_contact_inner .zrf-form form{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.ks_contact_inner .zrf-form form p label{font-size:16px}
-.ks_contact_inner .zrf-form form p input:not([type='submit']),.ks_contact_inner .zrf-form form p select{width:100%;background-color:rgba(215,215,215,0.25);border:0;height:53px;padding-inline:var(--space-4)}
-.ks_contact_inner .zrf-form form p textarea{border:0;background-color:rgba(215,215,215,0.25);padding-inline:var(--space-4)}
-.ks_contact_inner .zrf-form form p select{font-style:italic}
-.ks_contact_inner .zrf-form form p input[type='submit']{min-width:172px;min-height:57px;max-width:100%;padding:7.5px 15px;font-size:16px;font-weight:600;-webkit-transition:.3s all;transition:.3s all;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color-1);border:2px solid var(--color-1);color:#fff;cursor:pointer}
-.ks_contact_inner .zrf-form form p input[type='submit']:hover{background-color:#adadad;border-color:#adadad;color:var(--color-1)}
-.ks_contact_inner .zrf-form form p input[type='submit']:active{background-color:#fff;color:var(--color-1);border-color:var(--color-1)}
 .ks_page_content.support .ks_contact_inner{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .ks_page_content.support .ks_col:first-child{display:none}
 .ks_page_content.support .ks_col:nth-child(2){margin-left:0}
@@ -269,7 +261,7 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .single-post #main-content .container #sidebar .widget_block{margin-bottom:0}
 .single-post #main-content .container #sidebar .sidebar_rp_heading{margin-top:30px}
 .single-post #main-content .container #sidebar h3{color:#b36c26;margin-bottom:0;font-size:25px;line-height:28px;font-weight:600}
-.single-post #main-content .container #sidebar a{font-weight:500;color:#000;display:block;font-size:16px;line-height:22px}
+.single-post #main-content .container #sidebar a{font-weight:700;color:#000;display:block;font-size:16px;line-height:22px}
 .single-post #main-content .container #sidebar a:not(:last-child){margin-bottom:12px}
 .single-post #main-content .container #sidebar a:hover{color:#b36c26;font-weight:700}
 .single-post #main-content .container #sidebar .sidebar_button a{background-color:#b36c26;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;padding:10px 14px;color:#fff !important;border-radius:4px;margin-top:30px;text-transform:uppercase}
@@ -281,7 +273,7 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .single-post .ks_sp_author a{color:#000}
 .single-post .ks_sp_author a:hover{color:#b36c26;font-weight:700}
 .single-post .kn_sp_content{font-size:16px;margin-top:25px}
-.single-post .kn_sp_content a{color:#000;font-weight:500}
+.single-post .kn_sp_content a{color:#000;font-weight:700}
 .single-post .kn_sp_content a:hover{color:#b36c26;font-weight:700}
 .single-post .kn_sp_content p{line-height:22px;padding-bottom:12px}
 .single-post .kn_sp_content li{line-height:22px}
@@ -335,7 +327,6 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .ks_home_carousel .ks_hc_inner{max-width:400px;left:100px;border:2px solid #FFF}
 .ks_sage_section .sage_ib{width:48.5%}
 .ks_contact_inner .ks_col:last-child .gform-body li:not(:first-child):not(:nth-child(2)){margin-top:16px}
-.ks_contact_inner .zrf-form form p{padding-bottom:16px;width:49%}
 .ks_page_content.support .ks_col:nth-child(2){margin-right:56px}
 }@media(min-width:599.6px) and (max-width:797.5px){.ks_home_sec2 .ks_hs2_inner .info_box{width:48%}
 .ks_contact_inner .ks_col:first-child{width:48%}
@@ -452,7 +443,6 @@ body .mobile_nav .mobile_menu_bar::before{color:#2d2a25}
 .ks_contact_top{padding-inline:var(--space-3)}
 .ks_contact_inner{padding-inline:var(--space-3)}
 .ks_contact_inner .ks_col{width:100% !important;margin-bottom:var(--space-4)}
-.ks_contact_inner .zrf-form form p{width:100%}
 .posts_filters .blog_reset{width:100%}
 .posts_filters_selection{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%}
 .posts_filters_selection .posts_filter{width:100%}

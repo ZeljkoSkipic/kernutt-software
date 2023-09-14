@@ -394,43 +394,6 @@
 			margin-bottom: var(--space-4);
 		}
 	}
-	.zrf-form form {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		p {
-			@include tab-min {
-				padding-bottom: 16px;
-				width: 49%;
-
-			}
-			@include mob-only {
-				width: 100%;
-			}
-			label {
-				font-size: 16px;
-			}
-			input:not([type='submit']), select {
-				width: 100%;
-				background-color: rgba(215, 215, 215, 0.25);
-				border: none;
-				height: 53px;
-				padding-inline: var(--space-4);
-			}
-			textarea {
-				border: none;
-				background-color: rgba(215, 215, 215, 0.25);
-				padding-inline: var(--space-4);
-			}
-			select {
-				font-style: italic;
-			}
-			input[type='submit'] {
-				@include btn-1;
-				cursor: pointer;
-			}
-		}
-	}
 }
 
 /* Support */
