@@ -261,7 +261,7 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 .single-post #main-content .container #sidebar .widget_block{margin-bottom:0}
 .single-post #main-content .container #sidebar .sidebar_rp_heading{margin-top:30px}
 .single-post #main-content .container #sidebar h3{color:#b36c26;margin-bottom:0;font-size:25px;line-height:28px;font-weight:600}
-.single-post #main-content .container #sidebar a{font-weight:700;color:#000;display:block;font-size:16px;line-height:22px}
+.single-post #main-content .container #sidebar a{font-weight:500;color:#000;display:block;font-size:16px;line-height:22px}
 .single-post #main-content .container #sidebar a:not(:last-child){margin-bottom:12px}
 .single-post #main-content .container #sidebar a:hover{color:#b36c26;font-weight:700}
 .single-post #main-content .container #sidebar .sidebar_button a{background-color:#b36c26;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;padding:10px 14px;color:#fff !important;border-radius:4px;margin-top:30px;text-transform:uppercase}

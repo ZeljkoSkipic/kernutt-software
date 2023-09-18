@@ -54,9 +54,9 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "post_type",
                 "operator": "==",
-                "value": "default"
+                "value": "post"
             }
         ]
     ],
@@ -69,5 +69,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1693481555
+    "modified": 1695043528
 }

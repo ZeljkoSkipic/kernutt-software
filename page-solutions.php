@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Software Solutions
+Template Name: Solutions
 Template Post Type: page
 */
 

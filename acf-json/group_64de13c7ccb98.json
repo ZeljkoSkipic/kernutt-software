@@ -1,6 +1,6 @@
 {
     "key": "group_64de13c7ccb98",
-    "title": "Page: Software Solutions",
+    "title": "Template: Solutions",
     "fields": [
         {
             "key": "field_64de141753fd2",
@@ -117,7 +117,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-software-solutions.php"
+                "value": "page-solutions.php"
             }
         ]
     ],
@@ -132,5 +132,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1692276103
+    "modified": 1695043358
 }

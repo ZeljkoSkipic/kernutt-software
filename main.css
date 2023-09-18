@@ -730,7 +730,7 @@ html body #sage-intacct-partners .sub-navigation ul.sub-navigation-list li.sub-n
 
 .single-post #main-content .container #sidebar h3 { color: #B36C26; margin-bottom: 0; font-size: 25px; line-height: 28px; font-weight: 600; }
 
-.single-post #main-content .container #sidebar a { font-weight: 700; color: #000; display: block; font-size: 16px; line-height: 22px; }
+.single-post #main-content .container #sidebar a { font-weight: 500; color: #000; display: block; font-size: 16px; line-height: 22px; }
 
 .single-post #main-content .container #sidebar a:not(:last-child) { margin-bottom: 12px; }
 
