@@ -256,7 +256,7 @@
 			?>
 				<div class="logo_container">
 					<span class="logo_helper"></span>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<a href="<?php echo esc_url( the_field('logo_link', 'option') ); ?>">
 						<img src="<?php echo esc_attr( $logo ); ?>" width="<?php echo esc_attr( $logo_width ); ?>" height="<?php echo esc_attr( $logo_height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
 					</a>
 				</div>
